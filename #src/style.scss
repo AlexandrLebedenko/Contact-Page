@@ -1,0 +1,122 @@
+@import "./reset.scss";
+.wrapper {
+  min-height: 100vh;
+  min-width: 100%;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  background-image: url(../img/background.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+}
+.container {
+  padding: 1.25rem 4rem 4.5rem 4rem;
+}
+.logo {
+  margin-bottom: 2.75rem;
+}
+.title {
+  max-width: 50%;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 600;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+.subtitle {
+  max-width: 60%;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+  margin: auto;
+  margin-bottom: 4.5rem;
+}
+.form-box {
+  max-width: 50.625rem;
+  padding: 2rem;
+  margin: auto;
+  border-radius: 2rem;
+  background-color: #ffffff33;
+  box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.15);
+}
+.input-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 1.5rem;
+  column-gap: 1.125rem;
+  margin-bottom: 1.5rem;
+  &__item {
+    display: block;
+    min-width: 100%;
+    padding: 1.5rem 1.125rem;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    margin-top: 0.25rem;
+    color: #111729;
+    font-weight: 600;
+  }
+  &__item-select {
+    appearance: none;
+    background-image: url(../img/Expand_down.svg);
+    background-repeat: no-repeat;
+    background-position: right 1.125rem center;
+  }
+}
+.label {
+  font-size: 0.875rem;
+}
+.textarea {
+  min-width: 100%;
+  min-height: 12rem;
+  resize: none;
+  color: #111729;
+  font-weight: 600;
+  padding: 1.5rem 1.125rem;
+  margin: 0.25rem 0 1.5rem 0;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  &::placeholder {
+    color: #111729;
+  }
+}
+.form-btn {
+  min-width: 100%;
+  padding: 1.5rem 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #4036a9;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 1rem;
+}
+@media (max-width: 776px) {
+  .container {
+    padding: 1.25rem 0.75rem;
+  }
+  .title {
+    max-width: 90%;
+    font-size: 2.5rem;
+  }
+  .subtitle {
+    max-width: 100%;
+    font-size: 1rem;
+  }
+  .form-box {
+    padding: 1.5rem 0.875rem;
+  }
+  .input-box {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 777px) and (max-width: 1279px) {
+  .title {
+    max-width: 90%;
+    font-size: 2.5rem;
+  }
+  .subtitle {
+    max-width: 100%;
+    font-size: 1rem;
+  }
+}
